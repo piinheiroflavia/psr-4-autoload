@@ -1,8 +1,6 @@
 <?php
 
-namespace App\Dados;
-
-class usuario
+class Usuario
 {
     public $nome, $idade, $email, $telefone;
 
@@ -31,6 +29,8 @@ class usuario
 
         $matricula.= "<td><strong> Telefone: </strong></td>";
         $matricula.= "<td>" . $this->telefone . "</td><tr>";
+
+
 
         return $matricula;
     }

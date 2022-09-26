@@ -1,8 +1,6 @@
 <?php
 
-namespace App\Dados;
-
-class modulo
+class Modulo
 {
     public $unidade, $turno, $horario, $dias, $curso, $modulo;
 
@@ -14,12 +12,11 @@ class modulo
         $this-> dias = $dias;
         $this-> curso = $curso;
         $this-> modulo = $modulo;
+       
     }
 
     public function imprimir()
-
-    {  
-
+    {
         $mod = "</tr><td><strong> Unidade: </strong></td>";
         $mod.= "<td>" . $this-> unidade . "</td>";
 
@@ -36,7 +33,7 @@ class modulo
         $mod.= "<td>" .  $this->curso . "</td><tr>";
 
         $mod.= "</tr><td><strong> Módulo:  </strong></td>";
-        $mod.= "<td>" .  $this->modulo . "</td><tr>";
+        $mod.= "<td>" .  $this->modulo . "</td>";
         
 
         return   $mod;
